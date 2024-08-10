@@ -1,60 +1,41 @@
-Mind Boggle: Cards Edition
-  
-Mind Boggle: Cards Edition is a strategic card game where players compete against each other and computer-controlled opponents (bots) to achieve the lowest score. The game involves strategic decision-making and memory skills.
+# Mind Boggle: Cards Edition
 
-Table of Contents
-1)Introduction
-2)Features
-3)Game Rules
-4)Installation
-5)How to Play
-6)Future Expansion
-7)OOP Concepts
+## Overview
+Mind Boggle: Cards Edition is a card game where players compete to achieve the lowest score by strategically discarding and exchanging cards. The game features a human player and three computer-controlled bots, each with unique decision-making abilities and memory mechanisms. The game was developed as a project for an Object-Oriented Programming (OOP) course and showcases various OOP concepts in a practical, engaging way.
 
-1)Introduction
-Mind Boggle: Cards Edition is a unique card game designed to be intuitive and engaging for human players. The game challenges players to strategically discard and exchange cards to achieve the lowest score. Special card effects and different bot personalities add complexity and excitement to the gameplay.
+## Features
+- **Human Player vs. Bots**: Play against three AI-controlled opponents with different strategies and memory capabilities.
+- **Strategic Gameplay**: Make strategic decisions to discard or exchange cards, aiming for the lowest score.
+- **Special Card Effects**: Utilize cards with special abilities that can shuffle, exchange, or reveal cards, adding complexity to the game.
+- **Memory Mechanism**: Bots remember the rank, condition, and position of their own and opponents' cards, making for challenging gameplay.
+- **Score Calculation**: At the end of the game, the player with the lowest score wins.
 
-2)Features
-Human Player and Bots: Play against three computer-controlled bots.
-Strategic Decision-Making: Use your memory skills to track cards and make the best decisions.
-Special Card Effects: Certain cards can shuffle opponents' cards, allow card exchanges, or reveal cards.
-Dynamic Bot Personalities: Bots have varying levels of difficulty and personality traits, such as being aggressive, cautious, or unpredictable.
+## Challenges Faced
+- **Understanding the Flow**: Managing multiple classes, functions, and memory tracking for players and bots.
+- **Bot Decision-Making**: Implementing effective algorithms for bot moves based on memory and card conditions.
+- **User Interaction**: Handling user inputs, ensuring proper validation, and providing feedback during gameplay.
+- **Code Complexity and Debugging**: Managing and debugging complex code with various OOP components.
 
-3)Game Rules
-Each player is dealt a hand of three cards from a deck of 52 cards.
-The objective is to achieve the lowest score by the end of the game.
-Players can discard cards with or without replacement.
-Scores are calculated based on the ranks of the cards in players' hands.
-The player with the lowest score is declared the winner.
+## Future Expansions
+- **Multiplayer Support**: Adding support for multiple human players.
+- **Additional Game Modes**: Introducing new game modes or custom rulesets for varied gameplay experiences.
+- **Graphical User Interface (GUI)**: Enhancing the user interface with graphical elements for a more immersive experience.
 
-4)Installation
-To run the game, you need to have a C++ compiler installed. Follow these steps to compile and run the game:
-  4.1)Clone the repository:
-    git clone https://github.com/Furqan1208/MindBoggleCardGame.git
-  4.2)Navigate to the project directory:
-    cd MindBoggleCardGame
-  4.3)Compile the source code:
-    g++ -o MindBoggle main.cpp
-    
-5)How to Play
-Start the Game: Launch the game from the command line.
-Player Moves: Choose to discard or exchange cards to improve your hand.
-Bot Moves: Bots will play according to their personalities and memory of the game state.
-Special Cards: Use special cards to gain strategic advantages.
-Winning: The player with the lowest score at the end of the game wins.  
+## OOP Concepts Demonstrated
+- **Class Inheritance**: Derived classes (e.g., `Human` and `Bot`) inherit properties and methods from a base `Player` class.
+- **Polymorphism**: Overriding functions like `printHand()` for specialized behavior in derived classes.
+- **Encapsulation**: Controlled access to class data and methods through public and private specifiers.
+- **Memory Management**: Dynamic allocation and management of memory for card objects.
+- **Game Logic Implementation**: Integrating OOP principles into the core gameplay mechanics.
 
-6)Future Expansion
-Multiplayer Support: Implement support for multiple human players.
-Additional Game Modes: Introduce new card games or custom rulesets.
-User Interface Enhancements: Develop a graphical user interface (GUI) for a more interactive experience.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Furqan1208/Mind-Boggle.git
+2. Compile the code using a C++ compiler.
+3. Run the executable to start the game.   
 
-7)OOP Concepts
-Mind Boggle: Cards Edition utilizes several object-oriented programming (OOP) concepts:
-
-Class Inheritance: The game uses inheritance to create Human and Bot classes from a base Player class.
-Polymorphism: Function overriding is used to customize behavior for different player types.
-Class Composition: The Game class uses objects of Human and Bot to manage players.
-Encapsulation: Data and behavior are encapsulated within classes.
-Memory Management: Dynamic memory allocation is used for card objects and memory tracking.
-Random Number Generation: Used for card shuffling and distribution.
-Game Logic: Implements the complete game mechanics using OOP principles.
+## How to Play
+- Start the game and choose your moves by selecting card ranks and suits.
+- Discard or exchange cards strategically to lower your score.
+- Compete against bots and aim to have the lowest score by the end of the game.
